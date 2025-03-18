@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {checkbox} from '@igds/react'
+import {Checkbox, Button} from '@igds/react';
 
 function App() {
   return (
@@ -18,10 +18,11 @@ function App() {
         >
           Learn React
         </a>
+        <Checkbox label="תווית"></Checkbox>
+        <Button>Press me</Button>
       </header>
 {/* here i get the 194 errors, if i comment the usage of Checkbox, the errors are gone*/}
-      <checkbox></checkbox>
-       
+      {/* <checkbox></checkbox> */}
     </div>
   );
 }
